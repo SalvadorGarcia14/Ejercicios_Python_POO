@@ -17,7 +17,7 @@ def registrar_cliente():
 
     nombre = input("Nombre y Apellido: ")
     print("Seleccione el Pais: ")
-    pais = seleccionar(paises)
+    pais = seleccionar(paises)                                                       
     
     print("Seleccione la Provincia: ")
     provincia = seleccionar(pais.provincias)
