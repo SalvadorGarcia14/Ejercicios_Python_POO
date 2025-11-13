@@ -37,7 +37,6 @@ class ListaLectura():
     @classmethod
     def generador_codigos_unicos(cls) -> int:
         while True:
-            # ✅ CORREGIDO: random.choices (no random.choice)
             codigo = int("".join(random.choices(string.digits, k=4)))
             if codigo not in cls._codigos_utilizados:
                 cls._codigos_utilizados.add(codigo)
